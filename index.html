@@ -127,17 +127,19 @@ section. </p>
 <p>CORS stands for Cross Origin Resource Sharing. It is setting that 
 pertains only to browsers.</p>
 <p>By enabling CORS, you allow your browser to access data from other 
-people, from <i>their</i> computers. For 
-example, you can ping someone else&#39;s CouchDB instance through an AJAX 
-request, and it will return information. Or you can POST data from your 
-CouchDB instance, and CORS allows you to send that information.</p>
-<p>If you disable CORS, that means that no other server that you ping
-databases will return information. You can also limit the people you can
-recieve data from. If you only want certain websites, or origins, to be 
-able to retrieve data from, you can set &#39;Restrict to specific domains&#39;, 
-and then list which origins you want to allow access for.</p>
-<p>By setting, &#39;All domains&#39;, you allow receiving information from anyone,
-anywhere, and retrieve information that way.</p>
+people, recieving from and sending the data to <i>their</i> computers. 
+For example, you can ping someone else&#39;s CouchDB instance through an 
+AJAX request, and it will return information. Or you can POST data from 
+your browser or site, and enabling CORS allows you to send that 
+information.</p>
+<p>If you disable CORS, that means that no other server outside of your 
+domain that you ping will return information. You can also limit the 
+people you can recieve data from. If you only want certain websites ( 
+origins) to be able to retrieve data from, you can set 
+&#39;Restrict to specific domains&#39;, and then list which origins you want to 
+allow access for.</p>
+<p>By setting, &#39;All domains&#39;, you allow receiving and sending information 
+to anyone.</p>
 <p>This is a browser specific layer of protection, a second layer of 
 protection, if you will. The first layer of protection comes from the 
 permissions you set on each database, and whether they have _reader, 
@@ -160,11 +162,11 @@ new DB, check the &#39;Create Target&#39; button.</p>
 &#39;Continous&#39; means that the target database will update itself whenever
 the source database is updated, from now on. It will continue to update
 itself until you cancel the continous replication.</p>
-<p> If you are specifying a remote database name, you must specify the full 
- URL of the remote database (including the host, port number and database 
- name). If the remote instance requires authentication, you can specify 
- the username and password as part of the URL, for example 
- <code>http://username:pass@remotehost:5984/demo</code>.</p>
+<p>If you are specifying a remote database name, you must specify the full 
+URL of the remote database (including the host, port number and database 
+name). If the remote instance requires authentication, you can specify 
+the username and password as part of the URL, for example 
+<code>http://username:pass@remotehost:5984/demo</code>.</p>
 <p>Under the <a href="#page-active-tasks">Active Tasks</a> tab, you should see in the 
 table your new created replication. You might miss it if the database 
 being replicated is on the small side, but continous replications will
