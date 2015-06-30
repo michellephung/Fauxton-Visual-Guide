@@ -10,8 +10,8 @@ ability to create, update, delete and view documents and views, it
 provides access to the configuration parameters, and an interface for initiating 
 replication.</p>
 <p><a href="https://couchdb.apache.org/">CouchDB Homepage</a> (download available 
-here!)</p>
-<p><a href="http://docs.couchdb.org/en/1.6.1/">CouchDB 1.6.1 Documentation</a></p>
+<a href="https://couchdb.apache.org/#download">here</a>!)</p>
+<p><a href="http://docs.couchdb.org/en/latest/">CouchDB Documentation</a></p>
 <p><a href="http://blog.couchdb.org/">CouchDB Blog</a></p>
 <p><a href="https://webchat.freenode.net/">CouchDB IRC</a> Chat
 with our volunteers and others in the community.</p>
@@ -26,23 +26,23 @@ lines is. </p>
 <p><a href="#page-all-dbs">Databases</a> will show you a list of all your databases, 
 their size, number of documents, and quicklinks to it&#39;s permissions page 
 and replication page.</p>
-<p><a href="#page-active-tasks">Active Tasks</a> Displays a list of the running 
+<p><a href="#page-active-tasks">Active Tasks</a> displays a list of the running 
 background tasks on the server. Background tasks include view index 
 building, compaction and replication. This page is an interface to 
 the <a href="http://docs.couchdb.org/en/latest/api/server/common.html#api-server-active-tasks">Active Tasks API</a>
 call.</p>
-<p><a href="#page-config">Config</a> An interface into the configuration of your 
+<p><a href="#page-config">Config</a> is an interface for the configuration of your 
 CouchDB installation. The interface allows you to edit the different 
 configurable parameters. For more details on configuration, see 
 <a href="http://docs.couchdb.org/en/latest/config/index.html#config">Configuring CouchDB</a>.</p>
-<p><a href="#page-replication">Replication</a> An interface to the replication system, 
+<p><a href="#page-replication">Replication</a> is an interface to the replication system, 
 enabling you to initiate replication between local and remote databases. </p>
-<p><a href="http://docs.couchdb.org/en/1.6.1/">Documentation</a>
-Will direct you to your local copy of the documentation. The link shown 
+<p><a href="http://docs.couchdb.org/en/latest/">Documentation</a>
+will direct you to your local copy of the documentation. The link shown 
 in this guide is to the online version.</p>
-<p><a href="#page-login">Login/User Management</a> You can change your password , or 
-add administrator to your CouchDB instance within this tab.</p>
-<p><a href="#page-verify">Verify</a> The Verify Installation allows you to check 
+<p><a href="#page-login">Login/User Management</a> lets you can change your password, and 
+add administrator to your CouchDB instance.</p>
+<p><a href="#page-verify">Verify</a>, verifies your installation and allows you to check 
 whether all of the components of your CouchDB installation are correctly 
 installed.</p>
 </div></div></div><div id="page-all-dbs" class="pagecontainer"><div class="leftside page"><img src="assets/all-dbs.png"></div><div class="rightside linen page"><div class="textbox"><h1 id="all-databases">All Databases</h1>
@@ -143,13 +143,14 @@ _writer, _admin, etc. access.</p>
 <p>An interface to the replication system, enabling you to initiate 
 replication between local and remote databases.</p>
 <p>You will see two boxes, with 3 boxes in each bigger box.</p>
-<p>Depending on how big your screen is, the top (or leftmost box) is the 
-Source database. The bottom (or rightmost box) is the Target database.</p>
-<p>From the Source database box, you can choose an existing database from 
+<p>Depending on how big your screen is, the top (or leftmost box, labeled 
+#1 in the example) is the Source database. The bottom (or rightmost box, 
+label #2) is the Target database.</p>
+<p>From the Source database box (#1), you can choose an existing database from 
 the dropdown, by selecting &#39;Local&#39; like in the image to the left.
 Or you can specify a remote database as the Source, by clicking on 
 &#39;Remote&#39; in that box, and typing in the remote database&#39;s address.</p>
-<p>In the Target database box, choose either a local or remote database. If 
+<p>In the Target database box (#2), choose either a local or remote database. If 
 you want to create new database, and replicate into that new DB, check
 the &#39;Create Target&#39; button.</p>
 <p>For continuous Replications, select the &#39;continuous&#39; checkbox. 
@@ -160,7 +161,7 @@ itself until you cancel the continous replication.</p>
  URL of the remote database (including the host, port number and database 
  name). If the remote instance requires authentication, you can specify 
  the username and password as part of the URL, for example 
- <a href="http://username:pass@remotehost:5984/demo">http://username:pass@remotehost:5984/demo</a>.</p>
+ <code>http://username:pass@remotehost:5984/demo</code>.</p>
 <p>Under the <a href="#page-active-tasks">Active Tasks</a> tab, you should see in the 
 table your new created replication. You might miss it if the database 
 being Replicated is on the small side, but continous replications will
