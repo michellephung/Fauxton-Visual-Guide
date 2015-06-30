@@ -51,14 +51,14 @@ ul#toc.hidden
       
         Fauxton is a native web-based interface built into CouchDB. It provides 
         a basic interface to the majority of the functionality, including the 
-        ability to create, update, delete and view documents and views, it 
+        ability to create, update, delete and view documents and design documents. It 
         provides access to the configuration parameters, and an interface for initiating 
         replication.
 
         [CouchDB Homepage](https://couchdb.apache.org/) (download available 
-        here!)
+        [here](https://couchdb.apache.org/#download)!)
         
-        [CouchDB 1.6.1 Documentation](http://docs.couchdb.org/en/1.6.1/)
+        [CouchDB Documentation](http://docs.couchdb.org/en/latest/)
         
         [CouchDB Blog](http://blog.couchdb.org/)
 
@@ -81,41 +81,42 @@ ul#toc.hidden
         # Features: Getting Started
       
         When you first start to use Fauxton, the left most navigation panel will 
-        be allow you jump quickly between viewing what's going on in your 
-        CouchDB instance. 
+        allow you jump quickly between viewing different parts of what's going 
+        on in your CouchDB instance. 
       
         You can expand or collapse the navigation by clicking on the area above
         the topmost tab, "Databases", where the icon of the three horizontal 
         lines is. 
 
         [Databases](#page-all-dbs) will show you a list of all your databases, 
-        their size, number of documents, and quicklinks to it's permissions page 
-        and replication page.
+        their size, number of documents, and provides quick links to it's 
+        permissions page and replication page.
 
-        [Active Tasks](#page-active-tasks) Displays a list of the running 
+        [Active Tasks](#page-active-tasks) displays a list of the running 
         background tasks on the server. Background tasks include view index 
         building, compaction and replication. This page is an interface to 
         the [Active Tasks API](http://docs.couchdb.org/en/latest/api/server/common.html#api-server-active-tasks)
         call.
 
-        [Config](#page-config) An interface into the configuration of your 
-        CouchDB installation. The interface allows you to edit the different 
+        [Config](#page-config) is an interface for the configuration of your 
+        CouchDB installation. The interface allows you to edit different 
         configurable parameters. For more details on configuration, see 
         [Configuring CouchDB](http://docs.couchdb.org/en/latest/config/index.html#config).
 
-        [Replication](#page-replication) An interface to the replication system, 
-        enabling you to initiate replication between local and remote databases. 
+        [Replication](#page-replication) is an interface to the replication 
+        system, enabling you to initiate replication between local and remote 
+        databases. 
 
-        [Documentation](http://docs.couchdb.org/en/1.6.1/)
-        Will direct you to your local copy of the documentation. The link shown 
+        [Documentation](http://docs.couchdb.org/en/latest/)
+        will direct you to your local copy of the documentation. The link shown 
         in this guide is to the online version.
 
-        [Login/User Management](#page-login) You can change your password , or 
-        add administrator to your CouchDB instance within this tab.
+        [Login/User Management](#page-login) lets you can change your password, 
+        or add administrator to your CouchDB instance.
 
-        [Verify](#page-verify) The Verify Installation allows you to check 
-        whether all of the components of your CouchDB installation are correctly 
-        installed.
+        [Verify](#page-verify), verifies your installation and allows you to 
+        check whether all of the components of your CouchDB installation are 
+        correctly installed.
 
 //- ----------------------------------------------------------------------------------------------------------------------------
 #page-all-dbs.pagecontainer
@@ -156,14 +157,14 @@ ul#toc.hidden
         # All Documents
         ** 1 All Documents overview  ** 
         This is the viewing area, the default view shows you all of the 
-        documents, in your database. If you want to view each document's 
-        contents, you can either click 'Query Options', then 'Include Docs'. 
-        Additionally to edit a document, you can either click on the pencil on 
-        upper right of each card, double click on the document card, and that
-        will take you to the editor page.
+        documents in your database. If you want to view each document's 
+        contents, you can either click 'Query Options', and then 'Include Docs'. 
+        To edit a document, you can either click on the pencil in 
+        upper right of each card, or double click on the document card, go to 
+        the editor page.
 
         ** 2 Quick Links  **
-        These are all links pertain to this specific database.
+        These are all links that pertain to this specific database.
 
         ** 3 View Design Documents  **
         Design Documents are special documents, since they are data, they are
@@ -184,16 +185,16 @@ ul#toc.hidden
 
         ** 1 Jump to another Database Dropdown   **
         If you click on the database name here, a tray will pop up, and you 
-        start to type the name of another database. Clicking ENTER on the name 
+        type the name of another database. Clicking ENTER on the name 
         will cause the page to jump directly into that database.
         
         ** 2 Cog   **
-        You can many things using the tray within the Cog button. You can 
-        replicate this database, delete the database, add a new document, view, 
-        or query an index.
+        You can do many things using the tray within the Cog button. You can 
+        replicate this database, delete this database, add a new document, a new 
+        view, or query an index.
         
         ** 3 Multiple Document Select and delete   **
-        Clicking on the 'Select' will allow you choose multiple documents, or 
+        Clicking on 'Select' will allow you choose multiple documents, or 
         deselect all the documents for deletion. You can also expand or 
         collapse all of the documents to show more information.
         
@@ -204,13 +205,13 @@ ul#toc.hidden
         ** 5 Query Options   **
         You choose how you want to view the documents in this database using 
         Query Options. 'Include Docs' will show all the data in each document.
-        'Keys' will allow to narrow down the documents to a being viewed on this 
-        page, based on the parameters you provide.
+        'Keys' will allow to narrow down the documents being viewed on this 
+        page based on the parameters you provide.
         
         ** 6 API URL  **
         The API URL button shows up on most pages. All the data in CouchDB is 
         available through a pingable API URL. You can click on this link to view
-        and copy the particular API for the page you are viewing on each page.
+        and copy the particular API for the page you are viewing.
         Many times, the browser will shows a interface based on one of the API
         endpoints.
 //- ----------------------------------------------------------------------------------------------------------------------------
@@ -231,7 +232,7 @@ ul#toc.hidden
         call. You can view or copy the raw JSON by clicking on this button.
 
         ** 3 Filter  **  
-        You can filter by the type of Active Task, or search Active Tasks by 
+        You can filter by the type of task, or search active tasks by 
         database name (either source or target) using these tabs.
 
 //- ----------------------------------------------------------------------------------------------------------------------------
@@ -245,7 +246,9 @@ ul#toc.hidden
         
         An interface into the configuration of your CouchDB installation. The 
         interface allows you to edit the different configurable parameters. For 
-        more details on configuration, see the [Configuring CouchDB](http://docs.couchdb.org/en/latest/config/index.html#config) section. 
+        more details on configuration, see the 
+        [Configuring CouchDB](http://docs.couchdb.org/en/latest/config/index.html#config) 
+        section. 
 //- ----------------------------------------------------------------------------------------------------------------------------
 #page-cors.pagecontainer
   .leftside.page
@@ -258,20 +261,20 @@ ul#toc.hidden
         CORS stands for Cross Origin Resource Sharing. It is setting that 
         pertains only to browsers.
 
-        By enabling CORS, you allow other people, from <i>their</i> computers,
-        to access the data you have stored in your CouchDB databases. For 
-        example, they can ping your CouchDB instance through an AJAX request,
-         and it will return information. Or they can post data to your CouchDB 
-         instance, and CORS allows you to recieve that information.
+        By enabling CORS, you allow your browser to access data from other 
+        people, from <i>their</i> computers. For 
+        example, you can ping someone else's CouchDB instance through an AJAX 
+        request, and it will return information. Or you can POST data from your 
+        CouchDB instance, and CORS allows you to send that information.
 
-        If you disable CORS, that means that no browser that pings your 
-        databases will recieve information. You can also limit who can ping you. 
-        If you only want certain websites, or origins, to be able to recieve 
-        data from your stores, you can set 'Restrict to specific domains', and 
-        then list which origins you want to allow access for.
+        If you disable CORS, that means that no other server that you ping
+        databases will return information. You can also limit the people you can
+        recieve data from. If you only want certain websites, or origins, to be 
+        able to retrieve data from, you can set 'Restrict to specific domains', 
+        and then list which origins you want to allow access for.
 
-        By setting, 'All domains', you allow anyone from anywhere to ping your 
-        databases, and retrieve information that way.
+        By setting, 'All domains', you allow receiving information from anyone,
+        anywhere, and retrieve information that way.
 
         This is a browser specific layer of protection, a second layer of 
         protection, if you will. The first layer of protection comes from the 
@@ -291,17 +294,18 @@ ul#toc.hidden
 
         You will see two boxes, with 3 boxes in each bigger box.
 
-        Depending on how big your screen is, the top (or leftmost box) is the 
-        Source database. The bottom (or rightmost box) is the Target database.
+        Depending on how big your screen is, the top (or leftmost box, labeled 
+        \#1 in the example) is the Source database. The bottom (or rightmost 
+        box, label \#2) is the Target database.
         
-        From the Source database box, you can choose an existing database from 
-        the dropdown, by selecting 'Local' like in the image to the left.
+        From the Source database box (\#1), you can choose an existing database 
+        from the dropdown, by selecting 'Local' like in the image to the left.
         Or you can specify a remote database as the Source, by clicking on 
         'Remote' in that box, and typing in the remote database's address.
 
-        In the Target database box, choose either a local or remote database. If 
-        you want to create new database, and replicate into that new DB, check
-        the 'Create Target' button.
+        In the Target database box (\#2), choose either a local or remote 
+        database. If you want to create a new database, and replicate into that 
+        new DB, check the 'Create Target' button.
 
         For continuous Replications, select the 'continuous' checkbox. 
         'Continous' means that the target database will update itself whenever
@@ -312,17 +316,16 @@ ul#toc.hidden
          URL of the remote database (including the host, port number and database 
          name). If the remote instance requires authentication, you can specify 
          the username and password as part of the URL, for example 
-         http://username:pass@remotehost:5984/demo.
+         ``http://username:pass@remotehost:5984/demo``.
 
         Under the [Active Tasks](#page-active-tasks) tab, you should see in the 
         table your new created replication. You might miss it if the database 
-        being Replicated is on the small side, but continous replications will
+        being replicated is on the small side, but continous replications will
         always show up while they are active.
 
-         For more information, see 
-         [/_replicate](http://docs.couchdb.org/en/latest/api/server/common.html#api-server-replicate). 
+        For more information, see [/_replicate](http://docs.couchdb.org/en/latest/api/server/common.html#api-server-replicate). 
 
-         For more information on replication, see [Replication](http://docs.couchdb.org/en/latest/replication/index.html#replication).
+        For more information on replication, see [Replication](http://docs.couchdb.org/en/latest/replication/index.html#replication).
 
         
 //- ----------------------------------------------------------------------------------------------------------------------------
@@ -358,10 +361,10 @@ ul#toc.hidden
 
         Helpful links:
 
-        [CouchDB Homepage](https://couchdb.apache.org/) (more info available 
+        [CouchDB Homepage](https://couchdb.apache.org/) (more info is available 
         here!)
         
-        [CouchDB 1.6.1 Documentation](http://docs.couchdb.org/en/1.6.1/)
+        [CouchDB Documentation](http://docs.couchdb.org/en/latest/)
 
         [CouchDB Wiki](http://wiki.apache.org/couchdb/)
 
@@ -370,7 +373,7 @@ ul#toc.hidden
         [CouchDB Tutorials](http://wiki.apache.org/couchdb/Basics) General and 
         Tutorials for Specific Languages
 
-        [CouchDB IRC](https://webchat.freenode.net/) chat channel
+        [CouchDB IRC](https://webchat.freenode.net/) Our chat channel
 //- ----------------------------------------------------------------------------------------------------------------------------
 #page-answers.page
   .leftside.page
@@ -405,10 +408,10 @@ ul#toc.hidden
           hierarchical system of links or strategy guide that would help out a 
           newbie. 
 
-
-          If you have design skills, or would like to learn design skills, you 
-          can help out by finding a cumbersome or non-intuitive part of CouchDB 
-          and/or Fauxton and propose a fix. Good ideas are always welcome :)
+          If you have design skills, or would like to learn architecture skills, 
+          you can help out by finding a cumbersome or non-intuitive part of 
+          CouchDB and/or Fauxton and propose a fix. Good ideas are always 
+          welcome :)
 
           Another thing is documentation. We have a lot, but the more the 
           better! If you find a place in CouchDB that is not well-documented,
@@ -416,7 +419,7 @@ ul#toc.hidden
 
         p.question Q: I found a bug and I think it should be fixed!
         p.answer.
-          A: Awesome. Open a pull request and we can make that happen!
+          A: Awesome! Open a pull request and we can make that happen!
 
 
 
