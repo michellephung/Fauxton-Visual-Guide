@@ -1,2 +1,0 @@
-<!DOCTYPE html><html><head><title>Fauxton Visual Guide</title><link rel="stylesheet" href="main.css"><link rel="icon" type="image/png" href="assets/couch.png"><script src="js/jquery.js"></script><script src="js/main.js"></script></head><body><h1>Fauxton-Visual-Guide</h1><p>The Visual Guide to the <a href="https://github.com/apache/couchdb-fauxton">CouchDB Fauxton Project</a></p>
-<p>Compiled using <a href="http://harpjs.com/">Harp</a></p></body></html>
