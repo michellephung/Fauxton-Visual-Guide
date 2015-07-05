@@ -49,18 +49,26 @@ ul#toc.hidden
         JavaScript for MapReduce indexes,
         and regular HTTP for its API.
 
-        Fauxton is a native web-based interface built into CouchDB. It provides
-        a basic interface to the majority of the functionality, including the
-        ability to create, update, delete and view documents and design documents. It
-        provides access to the configuration parameters, and an interface for initiating
-        replication.
+        Fauxton is a native web-based interface built into CouchDB. It
+        provides a basic interface to the majority of the functionality,
+        including the ability to create, update, delete and view documents and
+        design documents. It provides access to the configuration parameters,
+        and an interface for initiating replication.
 
         [CouchDB Homepage](https://couchdb.apache.org/) (download available
         [here](https://couchdb.apache.org/#download)!)
 
+        [How to Install/Setup](http://docs.couchdb.org/en/latest/install/index.html)
+
+        [Install via npm](https://www.npmjs.com/package/fauxton)  
+        <div class="npm">
+          ``npm install -g fauxton``  
+          ``fauxton``
+        </div>
+
         [CouchDB Documentation](http://docs.couchdb.org/en/latest/)
 
-        [CouchDB Blog](http://blog.couchdb.org/)
+        [CouchDB Blog](http://blog.couchdb.org/) Updates Weekly! :)
 
         [CouchDB IRC](http://webchat.freenode.net/?channels=couchdb) Chat
         with our volunteers and others in the community.
@@ -75,13 +83,13 @@ ul#toc.hidden
       :markdown
         # Features: Getting Started
 
-        When you first start to use Fauxton, the left most navigation panel will
-        allow you jump quickly between viewing different parts of what's going
-        on in your CouchDB instance.
+        When you first start to use Fauxton, the left most navigation panel
+        will allow you jump quickly between viewing different parts of what's
+        going on in your CouchDB instance.
 
-        You can expand or collapse the navigation by clicking on the area above
-        the topmost tab, "Databases", where the icon of the three horizontal
-        lines is.
+        You can expand or collapse the navigation by clicking on the area 
+        above the topmost tab, "Databases", where the icon of the three
+        horizontal lines is.
 
         [Databases](#page-all-dbs) will show you a list of all your databases,
         their size, number of documents, and provides quick links to it's
@@ -103,8 +111,8 @@ ul#toc.hidden
         databases.
 
         [Documentation](http://docs.couchdb.org/en/latest/)
-        will direct you to your local copy of the documentation. The link shown
-        in this guide is to the online version.
+        will direct you to your local copy of the documentation. The link 
+        shown in this guide is to the online version.
 
         [Login/User Management](#page-login) lets you can change your password,
         or add administrator to your CouchDB instance.
@@ -153,19 +161,19 @@ ul#toc.hidden
         ** 1 All Documents overview  **
         This is the viewing area, the default view shows you all of the
         documents in your database. If you want to view each document's
-        contents, you can either click 'Query Options', and then 'Include Docs'.
-        To edit a document, you can either click on the pencil in
-        upper right of each card, or double click on the document card, go to
-        the editor page.
+        contents, you can either click 'Query Options', and then
+        'Include Docs'. To edit a document, you can either click on the pencil
+        in upper right of each card, or double click on the document card, go
+        to the editor page.
 
         ** 2 Quick Links  **
         These are all links that pertain to this specific database.
 
         ** 3 View Design Documents  **
         Design Documents are special documents, since they are data, they are
-        included in the database as documents, but they are special because they
-        contain functions for Map-Reduce which act on the rest of the documents
-        in the database.
+        included in the database as documents, but they are special because
+        they contain functions for Map-Reduce which act on the rest of the 
+        documents in the database.
 //- ----------------------------------------------------------------------------------------------------------------------------
 #page-header-bar.pagecontainer
   .leftside.page
@@ -175,8 +183,8 @@ ul#toc.hidden
       :markdown
         # All Documents - The Header Bar
         ** Default Header Bar  **
-        The top image is the default view of the header bar. You can play around with the
-        controls to see how it works.
+        The top image is the default view of the header bar. You can play 
+        around with the controls to see how it works.
 
         ** 1 Jump to another Database Dropdown   **
         If you click on the database name here, a tray will pop up, and you
@@ -185,8 +193,8 @@ ul#toc.hidden
 
         ** 2 Cog   **
         You can do many things using the tray within the Cog button. You can
-        replicate this database, delete this database, add a new document, a new
-        view, or query an index.
+        replicate this database, delete this database, add a new document, a
+        new view, or query an index.
 
         ** 3 Multiple Document Select and delete   **
         Clicking on 'Select' will allow you choose multiple documents, or
@@ -194,8 +202,8 @@ ul#toc.hidden
         collapse all of the documents to show more information.
 
         ** 4 Jump to a specific document in this database  **
-        Use this search bar to jump to a specific document in the database. This
-        field takes the _id of the document you are trying to view.
+        Use this search bar to jump to a specific document in the database.
+        This field takes the _id of the document you are trying to view.
 
         ** 5 Query Options   **
         You choose how you want to view the documents in this database using
@@ -205,8 +213,8 @@ ul#toc.hidden
 
         ** 6 API URL  **
         The API URL button shows up on most pages. All the data in CouchDB is
-        available through a pingable API URL. You can click on this link to view
-        and copy the particular API for the page you are viewing.
+        available through a pingable API URL. You can click on this link to
+        view and copy the particular API for the page you are viewing.
         Many times, the browser will shows a interface based on one of the API
         endpoints.
 //- ----------------------------------------------------------------------------------------------------------------------------
@@ -218,12 +226,14 @@ ul#toc.hidden
       :markdown
         # Active Tasks
         ** 1 Change Polling Interval  **
-        The status of each task can change as you are watching the Active Tasks
-        page. The page auto-updates, but polls at regular intervals. You can set
-        the amount of time that the page updates itself by dragging on this bar.
+        The status of each task can change as you are watching the Active 
+        Tasks page. The page auto-updates, but polls at regular intervals. You
+        can set the amount of time that the page updates itself by dragging on
+        this bar.
 
         ** 2 API URL  **
-        This page is an interface to the [Active Tasks API](http://docs.couchdb.org/en/latest/api/server/common.html#api-server-active-tasks)
+        This page is an interface to the
+        [Active Tasks API](http://docs.couchdb.org/en/latest/api/server/common.html#api-server-active-tasks)
         call. You can view or copy the raw JSON by clicking on this button.
 
         ** 3 Filter  **
@@ -240,8 +250,8 @@ ul#toc.hidden
         # Configuration
 
         An interface into the configuration of your CouchDB installation. The
-        interface allows you to edit the different configurable parameters. For
-        more details on configuration, see the
+        interface allows you to edit the different configurable parameters. 
+        For more details on configuration, see the
         [Configuring CouchDB](http://docs.couchdb.org/en/latest/config/index.html#config)
         section.
 //- ----------------------------------------------------------------------------------------------------------------------------
@@ -269,28 +279,29 @@ ul#toc.hidden
         from a different domain, e.g. ``bob.example`` - or even localhost!
 
         But be careful - allowing any domain to access your data can be a
-        security risk. If you only want certain websites (origins) to be able to
-        retrieve and change data, you can set 'Restrict to specific domains',
-        and then list which origins you want to allow access for.
+        security risk. If you only want certain websites (origins) to be able 
+        to retrieve and change data, you can set 'Restrict to specific
+        domains', and then list which origins you want to allow access for.
 
         By setting, 'All domains', you allow anyone from anywhere to ping your
         databases, and retrieve information that way.
 
-        If you disable CORS, the JavaScript that makes the AJAX request needs to
-        run on the same domain. With CORS disabled frontend code that runs on
-        ``alice.example`` must be also hosted on ``alice.example``. Disabling
-        CORS, means that no browser that pings your databases will recieve
-        information.
+        If you disable CORS, the JavaScript that makes the AJAX request needs 
+        to run on the same domain. With CORS disabled frontend code that runs 
+        on ``alice.example`` must be also hosted on ``alice.example``.
+        Disabling CORS, means that no browser that pings your databases will 
+        recieve information.
 
         You can also limit who can ping you. If you only
-        want certain websites, or origins, to be able to recieve data from your
-        stores, you can set 'Restrict to specific domains', and then list which
-        origins you want to allow access.
+        want certain websites, or origins, to be able to recieve data from
+        your stores, you can set 'Restrict to specific domains', and then list
+        which origins you want to allow access.
 
         This is a browser specific layer of protection, a second layer of
         protection, if you will. The first layer of protection comes from the
-        permissions you set on each database using roles. (For more information,
-        see [CouchDB Security](http://docs.couchdb.org/en/latest/api/database/security.html))
+        permissions you set on each database using roles. (For more 
+        information, see
+        [CouchDB Security](http://docs.couchdb.org/en/latest/api/database/security.html))
 //- ----------------------------------------------------------------------------------------------------------------------------
 #page-replication.pagecontainer
   .leftside.page
@@ -309,34 +320,37 @@ ul#toc.hidden
         \#1 in the example) is the Source database. The bottom (or rightmost
         box, label \#2) is the Target database.
 
-        From the Source database box (\#1), you can choose an existing database
-        from the dropdown, by selecting 'Local' like in the image to the left.
-        Or you can specify a remote database as the Source, by clicking on
-        'Remote' in that box, and typing in the remote database's address.
+        From the Source database box (\#1), you can choose an existing 
+        database from the dropdown, by selecting 'Local' like in the image to 
+        the left. Or you can specify a remote database as the Source, by 
+        clicking on 'Remote' in that box, and typing in the remote database's
+        address.
 
         In the Target database box (\#2), choose either a local or remote
-        database. If you want to create a new database, and replicate into that
-        new DB, check the 'Create Target' button.
+        database. If you want to create a new database, and replicate into
+        that new DB, check the 'Create Target' button.
 
         For continuous Replications, select the 'continuous' checkbox.
         'Continous' means that the target database will update itself whenever
-        the source database is updated, from now on. It will continue to update
-        itself until you cancel the continous replication.
+        the source database is updated, from now on. It will continue to 
+        update itself until you cancel the continous replication.
 
-        If you are specifying a remote database name, you must specify the full
-        URL of the remote database (including the host, port number and database
-        name). If the remote instance requires authentication, you can specify
-        the username and password as part of the URL, for example
+        If you are specifying a remote database name, you must specify the 
+        full URL of the remote database (including the host, port number and 
+        database name). If the remote instance requires authentication, you
+        can specify the username and password as part of the URL, for example
         ``http://username:pass@remotehost:5984/demo``.
 
-        Under the [Active Tasks](#page-active-tasks) tab, you should see in the
-        table your new created replication. You might miss it if the database
-        being replicated is on the small side, but continous replications will
-        always show up while they are active.
+        Under the [Active Tasks](#page-active-tasks) tab, you should see in 
+        the table your new created replication. You might miss it if the 
+        database being replicated is on the small side, but continous 
+        replications will always show up while they are active.
 
-        For more information, see [/_replicate](http://docs.couchdb.org/en/latest/api/server/common.html#api-server-replicate).
+        For more information, see
+        [/_replicate](http://docs.couchdb.org/en/latest/api/server/common.html#api-server-replicate).
 
-        For more information on replication, see [Replication](http://docs.couchdb.org/en/latest/replication/index.html#replication).
+        For more information on replication, see
+        [Replication](http://docs.couchdb.org/en/latest/replication/index.html#replication).
 //- ----------------------------------------------------------------------------------------------------------------------------
 #page-login.pagecontainer
   .leftside.page
@@ -370,8 +384,8 @@ ul#toc.hidden
 
         [How to Install/Setup](http://docs.couchdb.org/en/latest/install/index.html)
 
-        [CouchDB Homepage](https://couchdb.apache.org/) (more info is available
-        here!)
+        [CouchDB Homepage](https://couchdb.apache.org/) (more info is
+        available here!)
 
         [CouchDB Documentation](http://docs.couchdb.org/en/latest/)
 
@@ -382,7 +396,8 @@ ul#toc.hidden
         [CouchDB Tutorials](http://wiki.apache.org/couchdb/Basics) General and
         Tutorials for Specific Languages
 
-        [CouchDB IRC](http://webchat.freenode.net/?channels=couchdb) Our chat channel
+        [CouchDB IRC](http://webchat.freenode.net/?channels=couchdb) Our chat 
+        channel
 //- ----------------------------------------------------------------------------------------------------------------------------
 #page-answers.page
   .leftside.page
@@ -398,7 +413,8 @@ ul#toc.hidden
           | .
         p.question Q: Wow! this is awesome! how can I contribute?
         p.answer
-          | A: Thanks! If you want to contribute, you can open a pull request on 
+          | A: Thanks! If you want to contribute, you can open a pull request 
+          | on 
           a(href="https://github.com/apache/couchdb-fauxton") Github
           | .
         p.question Q: What can I do?
@@ -408,19 +424,19 @@ ul#toc.hidden
           |  page for a list of things we need help fixing or building.
         p.question Q: I'm not a programmer. What can I do?
         p.answer.
-          A: Good question. There are many things you can do to help out! Find a
-          place that you think needs fixing, and find out how to fix it.
+          A: Good question. There are many things you can do to help out! Find
+          a place that you think needs fixing, and find out how to fix it.
 
         :markdown
-          For example, if you find the documentation a long rabbit hole of links
-          and links (and links and links....) you could come up with a
+          For example, if you find the documentation a long rabbit hole of 
+          links and links (and links and links....) you could come up with a
           hierarchical system of links or strategy guide that would help out a
           newbie.
 
-          If you have design skills, or would like to learn architecture skills,
-          you can help out by finding a cumbersome or non-intuitive part of
-          CouchDB and/or Fauxton and propose a fix. Good ideas are always
-          welcome :)
+          If you have design skills, or would like to learn architecture 
+          skills, you can help out by finding a cumbersome or non-intuitive
+          part of CouchDB and/or Fauxton and propose a fix. Good ideas are 
+          always welcome :)
 
           Another thing is documentation. We have a lot, but the more the
           better! If you find a place in CouchDB that is not well-documented,
