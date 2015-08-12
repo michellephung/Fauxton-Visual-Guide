@@ -176,47 +176,91 @@ ul#toc.hidden
         documents in the database.
 //- ----------------------------------------------------------------------------------------------------------------------------
 #page-header-bar.pagecontainer
-  .leftside.page
-      img(src='assets/header-bar1.png')
-  .rightside.linen.page
-    .textbox
-      :markdown
-        # All Documents - The Header Bar
-        ** Default Header Bar  **
-        The top image is the default view of the header bar. You can play 
-        around with the controls to see how it works.
+  .headerSubsections
+    .head-header-section
+      .leftside
+      .rightside.linen.firstright
+        .long-header-textbox.textbox
+    .tail-header-section
+      .headerSection
+        .leftside.subleft
+          img(src='assets/headerbar/0.png')
+        .rightside.subright
+          .textbox
+            :markdown
+              # The Header Bar - All Documents
+              ** Default Header Bar  **
+              The top image is the default view of the header bar. You can play 
+              around with the controls to see how it works.  
 
-        ** 1 Jump to another Database Dropdown   **
-        If you click on the database name here, a tray will pop up, and you
-        type the name of another database. Clicking ENTER on the name
-        will cause the page to jump directly into that database.
+      .headerSection
+        .leftside.subleft
+          img(src='assets/headerbar/1.png')
+        .rightside.subright
+          .textbox
+            :markdown
+              ** 1 Jump to another Database Dropdown   **
+              If you click on the database name here, a tray will pop up, and you
+              type the name of another database. Clicking ENTER on the name
+              will cause the page to jump directly into that database.
 
-        ** 2 Cog   **
-        You can do many things using the tray within the Cog button. You can
-        replicate this database, delete this database, add a new document, a
-        new view, or query an index.
+      .headerSection
+        .leftside.subleft
+          img(src='assets/headerbar/2.png')
+        .rightside.subright
+          .textbox
+            :markdown
+              ** 2 Cog   **
+              You can do many things using the tray within the Cog button. You can
+              replicate this database, delete this database, add a new document, a
+              new view, or query an index.  
 
-        ** 3 Multiple Document Select and delete   **
-        Clicking on 'Select' will allow you choose multiple documents, or
-        deselect all the documents for deletion. You can also expand or
-        collapse all of the documents to show more information.
+      .headerSection
+        .leftside.subleft
+          img(src='assets/headerbar/3.png')
+        .rightside.subright
+          .textbox
+            :markdown
+              ** 3 Multiple Document Select and delete   **
+              Clicking on 'Select' will allow you choose multiple documents, or
+              deselect all the documents for deletion. You can also expand or
+              collapse all of the documents to show more information.
 
-        ** 4 Jump to a specific document in this database  **
-        Use this search bar to jump to a specific document in the database.
-        This field takes the _id of the document you are trying to view.
+      .headerSection
+        .leftside.subleft
+          img(src='assets/headerbar/4.png')
+        .rightside.subright
+          .textbox
+            :markdown
+              ** 4 Jump to a specific document in this database  **
+              Use this search bar to jump to a specific document in the database.
+              This field takes the _id of the document you are trying to view.
 
-        ** 5 Query Options   **
-        You choose how you want to view the documents in this database using
-        Query Options. 'Include Docs' will show all the data in each document.
-        'Keys' will allow to narrow down the documents being viewed on this
-        page based on the parameters you provide.
+      .headerSection
+        .leftside.subleft
+          img(src='assets/headerbar/5.png')
+        .rightside.subright
+          .textbox
+            :markdown
+              ** 5 Query Options   **
+              You choose how you want to view the documents in this database using
+              Query Options. 'Include Docs' will show all the data in each document.
+              'Keys' will allow to narrow down the documents being viewed on this
+              page based on the parameters you provide.
 
-        ** 6 API URL  **
-        The API URL button shows up on most pages. All the data in CouchDB is
-        available through a pingable API URL. You can click on this link to
-        view and copy the particular API for the page you are viewing.
-        Many times, the browser will shows a interface based on one of the API
-        endpoints.
+       .headerSection
+        .leftside.subleft
+          img(src='assets/headerbar/6.png')
+        .rightside.subright
+          .textbox
+            :markdown
+              ** 6 API URL  **
+              The API URL button shows up on most pages. All the data in CouchDB is
+              available through a pingable API URL. You can click on this link to
+              view and copy the particular API for the page you are viewing.
+              Many times, the browser will shows a interface based on one of the API
+              endpoints.
+
 //- ----------------------------------------------------------------------------------------------------------------------------
 #page-active-tasks.pagecontainer
   .leftside.page
